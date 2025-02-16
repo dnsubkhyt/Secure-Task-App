@@ -15,14 +15,11 @@ Welcome to the Secure and Interactive Web Application! This project is built usi
 - [Environment Variables Setup](#environment-variables-setup)
 - [Running the Application Locally](#running-the-application-locally)
 - [Deploying the Application to Heroku](#deploying-the-application-to-heroku)
-- [Application Features](#application-features)
-  - [Authentication and Authorization](#authentication-and-authorization)
-  - [Interactive Front-End with EJS](#interactive-front-end-with-ejs)
-  - [Security Enhancements](#security-enhancements)
 - [API Endpoints](#api-endpoints)
   - [User Endpoints](#user-endpoints)
   - [Task Endpoints](#task-endpoints)
 - [Error Handling](#error-handling)
+- [Security Enhancements](#security-enhancements)
 - [Conclusion](#conclusion)
 
   

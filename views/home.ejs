@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+</head>
+<body>
+    <h1>Your Task List</h1>
+    
+    <!-- Filters -->
+    <form method="GET" action="/tasks">
+        <label for="status">Filter by Status:</label>
+        <select name="status" id="status">
+            <option value="">All</option>
+            <option value="pending" <%= status === 'pending' ? 'selected' : '' %>>Pending</option>
+            <option value="completed" <%= status === 'completed' ? 'selected' : '' %>>Completed</option>
+        </select>
+        <button type="submit">Filter</button>
+    </form>
+
+    <!-- Task List -->
+    <ul>
+        <% tasks.forEach(function(task) { %>
+            <li>
+                <h3><%= task.title %></h3>
+                <p>Status: <%= task.status %></p>
+                <p>Description: <%= task.description %></p>
+            </li>
+        <% }) %>
+    </ul>
+
+    <!-- Link to Create New Task -->
+    <a href="/tasks/create">Create New Task</a>
+    
+    <!-- Logout Link -->
+    <a href="/logout">Logout</a>
+
+</body>
+</html>
